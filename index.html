@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora&display=swap">
+    <link rel="shortcut icon" href="icon.png">
+    <title>Nike</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+       
+        <nav> 
+            <a href="https://www.nike.com.br/?gad_source=1&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVATIAFNjtR2ejJic-xws4Qx3y9KzW6dNr1kvPmUfrhLpBpPU87bxShoCUQ0QAvD_BwE">Home</a>
+            <a href="https://atendimento.nike.com.br/hc/pt-br/articles/14832134114835-Canais-de-Atendimento?gad_source=1&gclid=CjwKCAjwuJ2xBhA3EiwAMVjkVJlmMWKZJzq-kPOjlRsLYdbx9xZuSK9e_B72Jvo4o1sQb7C7F5cqmhoCNJYQAvD_BwE">Contato</a>
+            <a href="https://jobs.nike.com/pt/life-at-nike" id="sobre">Sobre(crtl+k)</a>
+        </nav>
+    </header>
+    
+    <div id="vinhos">
+        
+    </div>
+    <div id="vinho-container">
+        <a href="file:///C:/Users/win10/Documents/3%C2%B0%20Inform%C3%A1tica%20-%20Trabalhos/Ana%20Beatriz/Ana%20Beatriz%20-%20%20Atalho%20Teclado/Atalhos%20no%20Teclado%20-%20Acessibilidade/tenis.png">       <img src="tenis.png" alt="tenis" id="vinho-img"></a>
+ 
+    </div>
+    
+    <div id="corpo">
+
+        <center><h1>Nike</h1></center>
+        <p>
+            A Nike é uma marca líder mundialmente conhecida por seus calçados e produtos esportivos inovadores. Fundada em 1964, a empresa se destaca pela sua combinação de desempenho, estilo e sustentabilidade. Além disso, é reconhecida por suas campanhas de marketing icônicas que transcendem o mundo do esporte. Com uma abordagem centrada na tecnologia e no design, a Nike continua a inspirar atletas e consumidores, impulsionando os limites do esporte e da moda.
+        </p>
+        
+        <div id="mensagem-form">
+            <h3>Faça um comentário:</h3>
+            <input type="text" id="mensagem-input" placeholder="Digite sua mensagem" style="color: rgb(0, 0, 0);"><br>
+            <button id="enviar-btn">Enviar</button>
+            <p id="mensagem-enviada" style="text-align: center; font-size: 1vw;"></p>
+        </div>
+    </div>
+    <footer>
+        <center><p>Desenvolvido por Ana Beatriz</p></center>
+    </footer>
+    <script>
+        document.getElementById("enviar-btn").addEventListener("click", function() {
+            document.getElementById("mensagem-enviada").innerText = "Mensagem enviada com sucesso!";
+        });
+
+        document.addEventListener("keydown", function(event){
+            if (event.ctrlKey && event.key === "k"){
+                window.location.href = "https://jobs.nike.com/pt/life-at-nike"; // Navegar para a âncora com o id "sobre"
+            }
+            if (event.ctrlKey && event.key === "i"){
+                window.open("tenis.png", "_blank"); // Abrir em uma nova guia
+            }
+            if (event.ctrlKey && event.key === "m"){
+                document.getElementById("mensagem-input").focus();
+            }
+        });
+    </script>
+</body>
+</html>
